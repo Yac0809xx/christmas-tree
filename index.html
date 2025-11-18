@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva tu Guapetón 😎</title>
+    <title>Guapetones Online 💖</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Reserva tu Guapetón 😎</h1>
-        <p>Conoce gente nueva y sé un poquito más feliz ✨</p>
+        <h1 class="titulo">💘 Elige tu Guapetón 💘</h1>
+        <p class="subtitulo">Momentos felices, compañía bonita ✨</p>
     </header>
 
-    <section class="formulario">
-        <h2>Haz tu reserva</h2>
-        <form id="reservaForm">
-            <label>Tu nombre</label>
-            <input type="text" id="nombre" required>
+    <section class="cards-container">
 
-            <label>Tipo de guapetón que quieres</label>
-            <select id="tipo">
-                <option value="Divertido">Divertido</option>
-                <option value="Romántico">Romántico</option>
-                <option value="Deportista">Deportista</option>
-                <option value="Intelectual">Intelectual</option>
-            </select>
+        <!-- Card 1 -->
+        <div class="card">
+            <h2>🎤 Nombre: El Cantante</h2>
+            <p>Te canta canciones online solo para ti. Serenatas, baladas, lo que quieras.</p>
+            <p class="precio">💵 $12 por hora</p>
+            <button onclick="reservar('El Cantante')">Reservar 💘</button>
+        </div>
 
-            <label>Fecha para conocerlo</label>
-            <input type="date" id="fecha" required>
+        <!-- Card 2 -->
+        <div class="card">
+            <h2>🛍️ Nombre: El Compañero</h2>
+            <p>Te acompaña a comprar, te ayuda a elegir ropa y te hace reír.</p>
+            <p class="precio">💵 $10 por hora</p>
+            <button onclick="reservar('El Compañero')">Reservar 💘</button>
+        </div>
 
-            <button type="submit">Reservar 💘</button>
-        </form>
+        <!-- Card 3 -->
+        <div class="card">
+            <h2>📚 Nombre: El Intelectual</h2>
+            <p>Habla contigo de libros, ciencia, anime, lo que te guste. Aprende contigo.</p>
+            <p class="precio">💵 $15 por hora</p>
+            <button onclick="reservar('El Intelectual')">Reservar 💘</button>
+        </div>
 
-        <p id="mensaje" class="mensaje"></p>
+        <!-- Card 4 -->
+        <div class="card">
+            <h2>😂 Nombre: El Divertido</h2>
+            <p>Te cuenta chistes, juega contigo online y te alegra el día.</p>
+            <p class="precio">💵 $9 por hora</p>
+            <button onclick="reservar('El Divertido')">Reservar 💘</button>
+        </div>
+
     </section>
 
+    <div id="corazon" class="corazon">❤️</div>
+
     <footer>
-        <p>© 2025 ReservaGuapetones. Creado con cariño 💖</p>
+        <p>© 2025 Guapetones. Hecho con amor 💖</p>
     </footer>
 
     <script src="script.js"></script>
