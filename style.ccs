@@ -1,26 +1,23 @@
+/* Fondo rosa */
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(45deg, #ff66cc, #ff99cc, #ff66a3, #ff4da6);
-    background-size: 300% 300%;
-    animation: fondo 10s ease infinite;
+    background: #ffb6d9; /* rosa pastel */
     color: white;
     text-align: center;
 }
 
-@keyframes fondo {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
+/* Título */
 .titulo {
     font-size: 3rem;
     margin-top: 30px;
-    text-shadow: 0 0 10px white, 0 0 20px #ffccff;
+    color: white;
+    text-shadow: 0 0 10px #ff5fa2, 0 0 20px #ff99cc;
 }
 
 .subtitulo {
+    font-size: 1.2rem;
+    color: #fff;
     margin-bottom: 40px;
 }
 
@@ -35,23 +32,28 @@ body {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     padding: 20px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 15px rgba(255,255,255,0.4);
-    border: 2px solid rgba(255,255,255,0.5);
+    color: #4a0033;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.card h2 {
+    color: #e60073;
 }
 
 .precio {
     font-size: 1.1rem;
     font-weight: bold;
-    margin: 10px 0;
+    color: #99004d;
 }
 
 /* Botón */
 button {
-    background: #ff0080;
+    background: #ff1a8c;
     border: none;
     padding: 12px;
     width: 100%;
@@ -65,7 +67,7 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    background: #ff0066;
+    background: #ff0077;
 }
 
 /* Corazón animado */
@@ -88,3 +90,4 @@ footer {
     margin-top: 40px;
     padding: 20px;
 }
+
